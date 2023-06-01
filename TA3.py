@@ -368,7 +368,7 @@ class MenstruasiForm(tk.Tk):
         if self.previous_ui:
             self.destroy()
             menstruasi_form = HealthOptions()
-            menstruasi_form.show_options
+            menstruasi_form.show_options()
 
     
 class BMICalculator(tk.Tk):
@@ -424,7 +424,7 @@ class BMICalculator(tk.Tk):
         if self.previous_ui:
             self.destroy()
             bmi_calculator = HealthOptions()
-            bmi_calculator.show_options
+            bmi_calculator.show_options()
 
 
 class CalorieInfoForm(tk.Tk):
@@ -500,7 +500,7 @@ class CalorieInfoForm(tk.Tk):
         if self.previous_ui:
             self.destroy()
             calorie_info = HealthOptions()
-            calorie_info.show_options
+            calorie_info.show_options()
 
 
 if __name__ == "__main__":
