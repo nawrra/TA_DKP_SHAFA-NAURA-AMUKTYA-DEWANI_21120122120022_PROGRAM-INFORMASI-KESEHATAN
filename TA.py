@@ -8,7 +8,6 @@ class LoginPage(tk.Tk):
         super().__init__()
         self.title("LOGIN")
         self.geometry("300x200")
-        self.stack = []
 
         label_username = tk.Label(self, text="Username:")
         label_username.pack()
@@ -63,7 +62,6 @@ class RegistrationFormLogin(tk.Tk):
         super().__init__()
         self.title("PROFILE")
         self.geometry("300x350")
-        self.stack = []
         self.previous_ui = previous_ui
 
         label_nama = tk.Label(self, text="Nama:")
@@ -181,7 +179,6 @@ class RegistrationForm(tk.Tk):
         super().__init__()
         self.title("REGISTER")
         self.geometry("300x400")
-        self.stack = []
         self.previous_ui = previous_ui
 
         label_username = tk.Label(self, text="Username:")
@@ -304,7 +301,6 @@ class HealthOptions(tk.Tk):
         super().__init__()
         self.title("INFORMASI KESEHATAN")
         self.geometry("300x200")
-        self.stack = []
         self.previous_ui = previous_ui
 
         label_pilihan = tk.Label(self, text="PILIH INFORMASI!", font=("Arial", 14))
@@ -340,7 +336,6 @@ class MenstruasiForm(tk.Tk):
         super().__init__()
         self.title("PREDIKSI MENSTRUASI")
         self.geometry("300x150")
-        self.stack = []
         self.previous_ui = previous_ui
 
         label_terakhir = tk.Label(self, text="Tanggal Terakhir Menstruasi")
@@ -376,7 +371,6 @@ class BMICalculator(tk.Tk):
         super().__init__()
         self.title("KALKULATOR BMI")
         self.geometry("300x250")
-        self.stack = []
         self.previous_ui = previous_ui
         
         label_berat = tk.Label(self, text="Berat (kg):")
@@ -432,7 +426,6 @@ class CalorieInfoForm(tk.Tk):
         super().__init__()
         self.title("AKTIVITAS-GOALS")
         self.geometry("300x400")
-        self.stack = []
         self.previous_ui = previous_ui
 
         label_aktivitas = tk.Label(self, text="Pilih Aktivitas Anda:")
