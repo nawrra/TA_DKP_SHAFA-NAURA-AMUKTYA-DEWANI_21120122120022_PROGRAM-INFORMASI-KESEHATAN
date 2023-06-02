@@ -118,11 +118,11 @@ class RegistrationFormLogin(tk.Tk):
         tinggi_badan = self.get_tinggi_badan()
 
         if not all([nama, umur, jenis_kelamin, berat_badan, tinggi_badan]):
-            messagebox.showerror("REGISTER GAGAL", "Harap isi semua kolom!")
+            messagebox.showerror("SUBMIT GAGAL", "Harap isi semua kolom!")
             return
 
         if not self.is_numeric(umur) or not self.is_numeric(berat_badan) or not self.is_numeric(tinggi_badan):
-            messagebox.showerror("REGISTER GAGAL", "Umur, berat badan, dan tinggi badan harus berupa angka!")
+            messagebox.showerror("SUBMIT GAGAL", "Umur, berat badan, dan tinggi badan harus berupa angka!")
             return
 
         umur = int(umur)
@@ -467,18 +467,18 @@ class CalorieInfoForm(tk.Tk):
         aktivitas = self.var_aktivitas.get()
         goal = self.var_goal.get()
 
-        if aktivitas == "Sedentary":
+        if aktivitas == "Tidak Aktif":
             activity_factor = 1.2
-        elif aktivitas == "Lightly Active":
+        elif aktivitas == "Sedikit Aktif":
             activity_factor = 1.375
-        elif aktivitas == "Moderately Active":
+        elif aktivitas == "Cukup Aktif":
             activity_factor = 1.55
         else:
             activity_factor = 1.725
 
-        if goal == "Lose Weight":
+        if goal == "Menurunkan Berat Badan":
             calorie_factor = 0.8
-        elif goal == "Maintain Weight":
+        elif goal == "Menjaga Berat Badan":
             calorie_factor = 1.0
         else:
             calorie_factor = 1.2
